@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.uth.disapp.jisn.practicas_iot.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_module"
+            app:destination="@id/module" />
+        <action
+            android:id="@+id/action_home2_to_extra"
+            app:destination="@id/extra" />
+    </fragment>
+    <fragment
+        android:id="@+id/extra"
+        android:name="com.uth.disapp.jisn.practicas_iot.Extra"
+        android:label="fragment_extra"
+        tools:layout="@layout/fragment_extra" />
+    <fragment
+        android:id="@+id/module"
+        android:name="com.uth.disapp.jisn.practicas_iot.Module"
+        android:label="fragment_module"
+        tools:layout="@layout/fragment_module" />
+</navigation>
